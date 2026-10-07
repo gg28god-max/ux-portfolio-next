@@ -1,83 +1,78 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowUpRight, BookOpen, Clock } from 'lucide-react';
-
-const articles = [
-  {
-    title: 'Top Web Design Trends to Watch in 2025',
-    readTime: '8 min read',
-    date: 'Jun 16, 2025',
-    snippet:
-      'Web design in 2025 is more immersive, responsive, and human-centered than ever before. Exploring AI-enhanced personalization, kinetic typography, and accessible UX.',
-  },
-  {
-    title: 'Starting and Growing a Career in Web Design',
-    readTime: '6 min read',
-    date: 'May 5, 2025',
-    snippet:
-      'Web designers operating at the intersection of creativity and front-end code command higher trust and bridge the gap between vision and implementation.',
-  },
-  {
-    title: 'Designing Products with Clear Purpose',
-    readTime: '6 min read',
-    date: 'May 5, 2025',
-    snippet:
-      'Purposeful digital product design starts with a simple idea: every interface and interaction should solve a real user problem.',
-  },
-  {
-    title: 'How Creative Teams Build Brand Systems',
-    readTime: '5 min read',
-    date: 'Jun 16, 2025',
-    snippet:
-      'A brand system is the comprehensive set of rules, design tokens, and components that define how an organization communicates visually across touchpoints.',
-  },
-];
+import { ArrowUpRight } from 'lucide-react';
 
 export default function ThoughtsBlog() {
   return (
-    <section id="blog" className="py-16 px-6 max-w-5xl mx-auto space-y-8">
-      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-black/10 pb-6">
-        <div>
-          <span className="text-xs font-mono text-gray-500 uppercase tracking-widest block mb-1">
-            Articles & Research
-          </span>
-          <h2 className="text-3xl font-bold text-gray-900 tracking-tight">Thoughts & Writings</h2>
-        </div>
-        <p className="text-sm text-gray-600 max-w-sm">
-          Insights on UI/UX trends, system design, front-end workflows, and user research.
-        </p>
+    <section id="blog" className="py-16 px-6 max-w-6xl mx-auto space-y-8">
+      <div className="flex items-center justify-between border-b border-black/10 pb-4">
+        <h2 className="text-2xl sm:text-3xl font-bold text-black tracking-tight">
+          Thoughts
+        </h2>
+        <a href="#blog" className="text-xs font-medium text-gray-500 hover:text-black flex items-center gap-1">
+          View all <ArrowUpRight className="w-3.5 h-3.5" />
+        </a>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {articles.map((article, idx) => (
-          <motion.div
-            key={article.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: idx * 0.1 }}
-            className="group framer-card p-6 rounded-2xl flex flex-col justify-between space-y-4"
-          >
-            <div className="space-y-2">
-              <div className="flex items-center justify-between text-xs text-gray-500 font-mono">
-                <span>{article.date}</span>
-                <span className="flex items-center gap-1">
-                  <Clock className="w-3 h-3" /> {article.readTime}
-                </span>
-              </div>
-              <h3 className="font-bold text-gray-900 text-lg group-hover:text-indigo-600 transition-colors leading-snug">
-                {article.title}
-              </h3>
-              <p className="text-xs text-gray-600 leading-relaxed">{article.snippet}</p>
-            </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Card 1 */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+          className="group cursor-pointer rounded-2xl overflow-hidden bg-white border border-black/10 flex flex-col justify-between"
+        >
+          <div className="h-48 w-full bg-gray-200 bg-cover bg-center" style={{ backgroundImage: `url('https://framerusercontent.com/images/2c0716ba1156f255f9c2959ad82b90d153352638.png')` }} />
+          <div className="p-5 space-y-2">
+            <span className="text-[11px] font-mono text-gray-400">May 5, 2025</span>
+            <h3 className="font-bold text-black text-base group-hover:text-indigo-600 transition-colors leading-snug">
+              Building Trust Through Clear Design
+            </h3>
+            <p className="text-xs text-gray-600">How thoughtful visual choices create a stronger sense of reliability for modern products.</p>
+          </div>
+        </motion.div>
 
-            <div className="pt-3 border-t border-black/5 flex items-center justify-between">
-              <span className="text-xs font-medium text-indigo-600 group-hover:underline">Read Article</span>
-              <ArrowUpRight className="w-4 h-4 text-gray-400 group-hover:text-indigo-600 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-            </div>
-          </motion.div>
-        ))}
+        {/* Card 2 */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.1 }}
+          className="group cursor-pointer rounded-2xl overflow-hidden bg-white border border-black/10 flex flex-col justify-between"
+        >
+          <div className="h-48 w-full bg-gray-200 bg-cover bg-center" style={{ backgroundImage: `url('https://framerusercontent.com/images/34e0b2991e6c0cfa98576117351f95ea9bbc9737.png')` }} />
+          <div className="p-5 space-y-2">
+            <span className="text-[11px] font-mono text-gray-400">Jun 16, 2025</span>
+            <h3 className="font-bold text-black text-base group-hover:text-indigo-600 transition-colors leading-snug">
+              The Role of Art Direction in Branding
+            </h3>
+            <p className="text-xs text-gray-600">Why visual direction helps brands create emotion and a distinct point of view.</p>
+          </div>
+        </motion.div>
+
+        {/* Card 3: Dark CTA Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+          className="bg-[#111111] text-white p-6 rounded-2xl flex flex-col justify-between space-y-6"
+        >
+          <div className="space-y-3">
+            <span className="text-xs font-mono text-gray-400 uppercase tracking-widest">Blog & Insights</span>
+            <h3 className="text-xl font-bold text-white leading-snug">
+              See how we shape brands with clarity and craft — explore our blog
+            </h3>
+          </div>
+          <a
+            href="#blog"
+            className="inline-flex items-center gap-2 text-xs font-semibold text-white hover:text-gray-300 transition-colors"
+          >
+            Explore all articles <ArrowUpRight className="w-4 h-4" />
+          </a>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,121 +1,77 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, CheckCircle2, Code2, Layers } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="pt-16 pb-20 px-6 max-w-5xl mx-auto space-y-8">
-      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-10">
-        <div className="space-y-6 max-w-2xl">
-          <motion.div
+    <section className="pt-12 pb-16 px-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+        {/* Left Column: Heading & Bio (7 cols) */}
+        <div className="md:col-span-7 space-y-6">
+          <motion.h1
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full framer-pill text-xs font-mono font-medium text-gray-800"
+            className="text-4xl sm:text-6xl font-bold tracking-tight text-black leading-[1.1]"
           >
-            <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
-            Product Designer & UX Researcher
-          </motion.div>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl sm:text-6xl font-bold tracking-tight text-gray-900 leading-tight"
-          >
-            I'm Guillaume, Product Designer & UX Researcher.
+            I'm Guillaume, Product Designer and UX Researcher
           </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-gray-600 text-lg sm:text-xl leading-relaxed font-normal"
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="pt-4 space-y-4 max-w-xl text-gray-700 text-base sm:text-lg leading-relaxed"
           >
-            Hi! I design and build purposeful digital products — specializing in{' '}
-            <strong className="text-gray-900 font-semibold">B2B SaaS, FinTech, & Developer Tooling</strong>. 
-            Bridging user research, system design, and production React code with real-world constraints.
-          </motion.p>
+            <p className="font-semibold text-black">Hi!</p>
+            <p>
+              I'm Guillaume, a UI/UX designer & visual developer currently working on web applications, design systems, and product experiences.
+            </p>
+            <p className="text-sm text-gray-600">
+              For the past 4+ years, I've designed & built digital products across B2B SaaS, FinTech, and developer tools with a heavy focus on usability, technical feasibility, and clarity.
+            </p>
+          </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="pt-2 flex flex-wrap items-center gap-4"
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="pt-2 flex items-center gap-4"
           >
             <a
               href="#works"
-              className="px-6 py-3 rounded-full bg-black text-white font-medium text-sm hover:bg-gray-800 transition-all flex items-center gap-2 shadow-sm"
+              className="px-6 py-3 rounded-full bg-black text-white font-medium text-sm hover:bg-gray-800 transition-all inline-flex items-center gap-2"
             >
-              Explore Selected Projects
-              <ArrowRight className="w-4 h-4" />
-            </a>
-            <a
-              href="mailto:gg28.god@gmail.com"
-              className="px-6 py-3 rounded-full border border-black/15 text-gray-800 font-medium text-sm hover:bg-black/5 transition-all"
-            >
-              Get in Touch
+              Selected Projects
+              <ArrowUpRight className="w-4 h-4" />
             </a>
           </motion.div>
         </div>
 
-        {/* Avatar / Profile Frame */}
+        {/* Right Column: Photo Card (5 cols) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="w-full md:w-80 h-96 rounded-3xl bg-gray-200 border border-black/10 overflow-hidden relative shadow-lg flex flex-col justify-end p-6 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('https://framerusercontent.com/images/ue9IClg37SpZ5YcBTAPeavvDUNo.png')`,
-          }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="md:col-span-5 flex justify-center"
         >
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-          <div className="relative z-10 text-white space-y-1">
-            <span className="text-xs font-mono text-gray-300">Guillaume Goder</span>
-            <p className="text-sm font-medium">Montréal, Canada</p>
-            <div className="pt-2 flex items-center gap-2 text-xs text-emerald-400 font-mono">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              Available for UX & Visual Dev Roles
+          <div className="w-full max-w-md h-[420px] rounded-3xl overflow-hidden bg-gray-200 border border-black/10 shadow-md relative group">
+            <div
+              className="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+              style={{
+                backgroundImage: `url('https://framerusercontent.com/images/ue9IClg37SpZ5YcBTAPeavvDUNo.png')`,
+                backgroundColor: '#eae6e1',
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <div className="absolute bottom-6 left-6 text-white font-medium text-sm">
+              <span>Guillaume Goder</span>
+              <span className="block text-xs text-gray-300 font-mono">Product Designer & Visual Dev</span>
             </div>
           </div>
         </motion.div>
       </div>
-
-      {/* Pillars */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
-        className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6"
-      >
-        <div className="framer-card p-5 rounded-2xl space-y-1">
-          <div className="text-black font-semibold text-sm flex items-center gap-2">
-            <Layers className="w-4 h-4 text-indigo-600" /> Collaborative Anchor
-          </div>
-          <p className="text-xs text-gray-600">
-            Open-source & developer workflow redesigns with cross-functional constraints.
-          </p>
-        </div>
-
-        <div className="framer-card p-5 rounded-2xl space-y-1">
-          <div className="text-black font-semibold text-sm flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-emerald-600" /> Analytical Redesign
-          </div>
-          <p className="text-xs text-gray-600">
-            Recorded usability testing with 5 target users & data-driven iterations.
-          </p>
-        </div>
-
-        <div className="framer-card p-5 rounded-2xl space-y-1">
-          <div className="text-black font-semibold text-sm flex items-center gap-2">
-            <Code2 className="w-4 h-4 text-purple-600" /> Next.js & Framer Motion
-          </div>
-          <p className="text-xs text-gray-600">
-            Vibe-coded custom components with zero platform lock-in on Vercel.
-          </p>
-        </div>
-      </motion.div>
     </section>
   );
 }
