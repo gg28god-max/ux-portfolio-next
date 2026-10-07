@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# npm lockfile — this project declares pnpm (see pnpm-workspace.yaml).
+# Committing an npm lockfile can make the deploy switch package managers,
+# so it is kept local-only.
+package-lock.json
+
+# Vercel
+.vercel
+
+# Local env files
+.env
+.env.local
+.env.*.local
+
+# Editor / OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Next.js build output
+.next/
+next-env.d.ts
