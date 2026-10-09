@@ -1,12 +1,23 @@
 import type { Metadata } from 'next';
+import { Playfair_Display, Inter } from 'next/font/google';
 import './globals.css';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
-  title: 'UX & Visual Development Portfolio | Technical Product Designer',
+  title: 'Guillaume Goder — Graphic Design & Digital Marketing | Targeted for KRB Avocats',
   description:
-    'Technical UX Designer & Visual Developer specializing in B2B SaaS, FinTech, and Developer Tools. Built with Next.js, Tailwind, and Framer Motion.',
+    'Bilingual Graphic Design & Digital Marketing Coordinator based in Montreal. Specializing in high-stakes B2B collateral, brand identity, and legal sector marketing.',
 };
 
 export default function RootLayout({
@@ -15,11 +26,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className="antialiased selection:bg-indigo-500/30 selection:text-indigo-200">
-        <Navbar />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+      <body className="bg-white text-[#111111] antialiased selection:bg-black selection:text-white">
+        {children}
       </body>
     </html>
   );
