@@ -6,12 +6,12 @@ export default function HeaderNav() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
         {/* Name & Target */}
         <div className="flex items-center gap-3">
-          <Link href="/" className="font-serif-editorial text-xl font-bold tracking-tight text-black hover:opacity-80">
+          <Link href="/" className="font-display text-2xl tracking-wider text-black hover:opacity-80">
             GUILLAUME GODER
           </Link>
           <span className="hidden sm:inline-block w-px h-4 bg-black/20" />
           <span className="text-[11px] font-mono tracking-widest text-neutral-500 uppercase">
-            CANDIDACY: KRB AVOCATS | LAWYERS
+            KRB AVOCATS &bull; GRAPHIC DESIGN & DIGITAL MARKETING
           </span>
         </div>
 

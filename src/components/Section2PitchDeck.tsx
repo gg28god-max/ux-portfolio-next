@@ -3,7 +3,7 @@ export default function Section2PitchDeck() {
     <section id="pitch-deck" className="py-24 px-6 max-w-7xl mx-auto border-b border-black/10">
       {/* Section Tag */}
       <div className="flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-neutral-500 mb-8">
-        <span className="font-bold text-black">PROJECT 01</span>
+        <span className="brief-eyebrow text-black font-bold">02 &mdash; CASE STUDY</span>
         <span>/</span>
         <span>MERGERS & ACQUISITIONS COLLATERAL</span>
       </div>
@@ -12,11 +12,11 @@ export default function Section2PitchDeck() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
         {/* Left Column: Case Study Narrative (5 Cols) */}
         <div className="lg:col-span-5 space-y-6">
-          <h2 className="font-serif-editorial text-3xl sm:text-5xl font-bold text-black leading-tight">
+          <h2 className="font-display text-4xl sm:text-6xl text-black leading-[0.95] tracking-wide">
             Corporate Pitch Deck: Cross-Border M&A Practice
           </h2>
 
-          <div className="space-y-4 text-sm sm:text-base text-neutral-700 leading-relaxed font-normal">
+          <div className="space-y-4 text-sm sm:text-base text-neutral-700 leading-relaxed font-sans font-normal">
             <p>
               In high-stakes corporate transactions, design is not ornamental; it is an instrument of credibility and risk mitigation. For this institutional M&A pitch deck, I transformed dense transactional data, multi-jurisdictional tax structures, and regulatory timelines into an authoritative, scannable presentation system.
             </p>
@@ -60,11 +60,11 @@ export default function Section2PitchDeck() {
                 <span className="text-[10px] text-neutral-400">SLIDE 14</span>
               </div>
 
-              <div className="space-y-2">
+              <div className="space-y-1">
                 <span className="text-[11px] font-mono uppercase tracking-widest text-neutral-500 block">
                   FIGURE 2.4 — DEAL ARCHITECTURE & TAX SEQUENCING
                 </span>
-                <h3 className="font-serif-editorial text-xl sm:text-2xl font-bold text-black leading-snug">
+                <h3 className="font-display text-2xl sm:text-3xl text-black leading-tight tracking-wide">
                   Multi-Tier Entity Acquisition: Closing Sequence & Escrow Allocation
                 </h3>
               </div>
@@ -74,22 +74,22 @@ export default function Section2PitchDeck() {
                 <div className="p-3 bg-neutral-50 border border-neutral-300 space-y-1">
                   <span className="text-[10px] font-mono text-neutral-500 block">PHASE 01: DUE DILIGENCE</span>
                   <span className="text-base font-bold text-black font-mono block">$140M</span>
-                  <span className="text-[10px] text-neutral-600 block">Asset Allocation Verified</span>
+                  <span className="text-[10px] text-neutral-600 block font-sans">Asset Allocation Verified</span>
                 </div>
                 <div className="p-3 bg-neutral-50 border border-neutral-300 space-y-1">
                   <span className="text-[10px] font-mono text-neutral-500 block">PHASE 02: REGULATORY</span>
                   <span className="text-base font-bold text-black font-mono block">100%</span>
-                  <span className="text-[10px] text-neutral-600 block">Competition Bureau Cleared</span>
+                  <span className="text-[10px] text-neutral-600 block font-sans">Competition Bureau Cleared</span>
                 </div>
-                <div className="p-3 bg-black text-white p-3 space-y-1">
+                <div className="p-3 bg-black text-white space-y-1">
                   <span className="text-[10px] font-mono text-neutral-400 block">PHASE 03: CLOSING</span>
                   <span className="text-base font-bold text-white font-mono block">T-ZERO</span>
-                  <span className="text-[10px] text-neutral-300 block">Funds Escrow Released</span>
+                  <span className="text-[10px] text-neutral-300 block font-sans">Funds Escrow Released</span>
                 </div>
               </div>
 
               <div className="pt-3 border-t border-neutral-100 flex justify-between text-[11px] font-mono text-neutral-500">
-                <span>Font: Editorial Serif + Helvetica Neue</span>
+                <span>Typography: Bebas Neue + Plus Jakarta Sans</span>
                 <span>PowerPoint Master Layout</span>
               </div>
             </div>

@@ -6,11 +6,11 @@ export default function Section3DigitalSocial() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-8">
           <div className="space-y-2">
             <div className="flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-neutral-400">
-              <span className="font-bold text-white">PROJECT 02</span>
+              <span className="brief-eyebrow text-amber-400 font-bold">03 &mdash; DIGITAL ARCHITECTURE</span>
               <span>/</span>
-              <span>DIGITAL BRAND ARCHITECTURE & SOCIAL ENGAGEMENT</span>
+              <span>B2B SOCIAL & ENGAGEMENT</span>
             </div>
-            <h2 className="font-serif-editorial text-3xl sm:text-5xl font-bold text-white leading-tight">
+            <h2 className="font-display text-4xl sm:text-7xl text-white leading-[0.92] tracking-wide">
               B2B Social & Thought Leadership Architecture
             </h2>
           </div>
@@ -29,11 +29,11 @@ export default function Section3DigitalSocial() {
                 {/* Header of social asset */}
                 <div className="flex items-center justify-between border-b border-white/10 pb-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-white text-black font-bold font-serif flex items-center justify-center text-sm">
+                    <div className="w-10 h-10 bg-white text-black font-display flex items-center justify-center text-xl">
                       KRB
                     </div>
                     <div>
-                      <span className="text-xs font-bold text-white block">KRB Avocats | Lawyers</span>
+                      <span className="text-xs font-bold text-white block font-sans">KRB Avocats | Lawyers</span>
                       <span className="text-[10px] text-neutral-400 font-mono block">12,400+ Followers &bull; Corporate Law Practice</span>
                     </div>
                   </div>
@@ -43,11 +43,11 @@ export default function Section3DigitalSocial() {
                 </div>
 
                 {/* Content graphic mockup */}
-                <div className="p-6 bg-[#080a0e] border border-white/15 space-y-4">
-                  <span className="text-[10px] font-mono text-red-400 uppercase tracking-widest block">
+                <div className="p-6 bg-[#080a0e] border border-white/15 space-y-3">
+                  <span className="text-[10px] font-mono text-amber-400 uppercase tracking-widest block">
                     TRANSACTION SPOTLIGHT // MONTREAL
                   </span>
-                  <h3 className="font-serif-editorial text-xl sm:text-2xl font-bold text-white leading-snug">
+                  <h3 className="font-display text-2xl sm:text-3xl text-white leading-tight tracking-wide">
                     Advising in the Acquisition of $85M Industrial Logistics Hub
                   </h3>
                   <p className="text-xs text-neutral-400 font-sans leading-relaxed">
@@ -85,11 +85,11 @@ export default function Section3DigitalSocial() {
 
           {/* Right Column: Narrative & Technical Disciplines (5 Cols) */}
           <div className="lg:col-span-5 space-y-6">
-            <h3 className="font-serif-editorial text-2xl sm:text-3xl font-bold text-white leading-snug">
+            <h3 className="font-display text-3xl sm:text-4xl text-white leading-tight tracking-wide">
               Consistency That Commands Authority
             </h3>
 
-            <div className="space-y-4 text-sm sm:text-base text-neutral-300 leading-relaxed font-light">
+            <div className="space-y-4 text-sm sm:text-base text-neutral-300 leading-relaxed font-sans font-light">
               <p>
                 In professional legal services, digital marketing must mirror the caliber of the firm's counsel. Scattershot social graphics and disjointed visuals erode institutional trust.
               </p>

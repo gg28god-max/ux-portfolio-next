@@ -13,7 +13,7 @@ export default function Section5TheCloser() {
     <section id="closer" className="py-24 px-6 max-w-7xl mx-auto">
       {/* Section Tag */}
       <div className="flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-neutral-500 mb-12">
-        <span className="font-bold text-black">SECTION 04</span>
+        <span className="brief-eyebrow text-black font-bold">05 &mdash; THE CLOSER</span>
         <span>/</span>
         <span>ABOUT & DIRECT INQUIRY</span>
       </div>
@@ -45,16 +45,16 @@ export default function Section5TheCloser() {
 
         {/* Right Column: Statement, Qualifications & Direct Actions (7 Cols) */}
         <div className="lg:col-span-7 space-y-8">
-          <div className="space-y-4">
+          <div className="space-y-3">
             <span className="text-xs font-mono uppercase tracking-widest text-neutral-400 block">
               CANDIDATE STATEMENT
             </span>
-            <h2 className="font-serif-editorial text-3xl sm:text-5xl font-bold text-black leading-tight">
+            <h2 className="font-display text-4xl sm:text-6xl text-black leading-[0.95] tracking-wide">
               Bridging Rigorous Institutional Standards with Modern Digital Reach.
             </h2>
           </div>
 
-          <blockquote className="border-l-2 border-black pl-6 text-lg sm:text-xl text-neutral-800 font-light leading-relaxed italic">
+          <blockquote className="border-l-2 border-black pl-6 text-lg sm:text-xl text-neutral-800 font-sans font-light leading-relaxed italic">
             "I combine a deep understanding of corporate marketing with advanced technical design proficiency. I am comfortable bridging the gap between rigorous print standards and modern digital CMS platforms. Let's discuss how I can elevate KRB's brand visibility."
           </blockquote>
 

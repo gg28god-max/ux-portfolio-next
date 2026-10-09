@@ -3,7 +3,7 @@ export default function Section4PrintCollateral() {
     <section id="print-collateral" className="py-24 px-6 max-w-7xl mx-auto border-b border-black/10">
       {/* Section Header */}
       <div className="flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-neutral-500 mb-8">
-        <span className="font-bold text-black">PROJECT 03</span>
+        <span className="brief-eyebrow text-black font-bold">04 &mdash; PHYSICAL ARTIFACTS</span>
         <span>/</span>
         <span>CLIENT SUMMIT & TACTILE PRINT COLLATERAL</span>
       </div>
@@ -11,11 +11,11 @@ export default function Section4PrintCollateral() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
         {/* Left Column: Narrative & Technical Print Precision (5 Cols) */}
         <div className="lg:col-span-5 space-y-6">
-          <h2 className="font-serif-editorial text-3xl sm:text-5xl font-bold text-black leading-tight">
+          <h2 className="font-display text-4xl sm:text-6xl text-black leading-[0.95] tracking-wide">
             Tactile Print Collateral: Annual Client Gala & M&A Monograph
           </h2>
 
-          <div className="space-y-4 text-sm sm:text-base text-neutral-700 leading-relaxed font-normal">
+          <div className="space-y-4 text-sm sm:text-base text-neutral-700 leading-relaxed font-sans font-normal">
             <p>
               In a digital-first world, bespoke physical print collateral remains the hallmark of elite institutional relationships. When high-net-worth clients, corporate directors, and institutional lenders hold a firm's publication, paper weight, binding, and ink density communicate prestige before a single word is read.
             </p>
@@ -52,7 +52,7 @@ export default function Section4PrintCollateral() {
               {/* Foil Stamp Emblem Header */}
               <div className="flex justify-between items-start border-b border-black/15 pb-6">
                 <div className="space-y-1">
-                  <span className="font-serif-editorial text-2xl font-bold tracking-tight text-black block">
+                  <span className="font-display text-3xl font-bold tracking-wider text-black block">
                     KRB AVOCATS
                   </span>
                   <span className="text-[10px] font-mono tracking-widest text-neutral-500 uppercase block">
@@ -69,8 +69,8 @@ export default function Section4PrintCollateral() {
                 <span className="text-[11px] font-mono uppercase tracking-widest text-neutral-400 block">
                   CHAPTER I // ADAPTIVE DEALMAKING IN VOLATILE MARKETS
                 </span>
-                <p className="font-serif-editorial text-lg sm:text-xl font-normal text-black leading-snug">
-                  "The modern corporate landscape demands legal agility paired with unshakeable financial discipline. We architect agreements that endure."
+                <p className="font-display text-xl sm:text-2xl font-normal text-black leading-snug tracking-wide">
+                  "THE MODERN CORPORATE LANDSCAPE DEMANDS LEGAL AGILITY PAIRED WITH UNSHAKEABLE FINANCIAL DISCIPLINE."
                 </p>
                 <div className="grid grid-cols-2 gap-6 pt-2 text-xs text-neutral-600 font-sans leading-relaxed border-t border-neutral-200">
                   <div>

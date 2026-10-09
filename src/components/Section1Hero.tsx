@@ -3,22 +3,22 @@ export default function Section1Hero() {
     <section className="min-h-[92vh] flex flex-col justify-between px-6 pt-16 pb-12 max-w-7xl mx-auto border-b border-black/10">
       {/* Top Pre-header */}
       <div className="flex items-center justify-between text-xs font-mono uppercase tracking-widest text-neutral-500 pb-8 border-b border-neutral-200">
-        <span>Portfolio 2026 // Targeted Presentation</span>
-        <span>Role: Graphic Design & Digital Marketing Coordinator</span>
+        <span className="brief-eyebrow text-black">01 &mdash; TARGETED CANDIDACY</span>
+        <span>ROLE: GRAPHIC DESIGN & DIGITAL MARKETING COORDINATOR</span>
       </div>
 
       {/* Main Massive Left-Aligned Typography Block */}
-      <div className="my-auto py-12 max-w-5xl space-y-8">
+      <div className="my-auto py-12 max-w-5xl space-y-6">
         <div className="inline-block px-3 py-1 bg-black text-white text-[11px] font-mono tracking-widest uppercase">
-          Montreal, QC // Bilingual (English / Français)
+          MONTREAL, QC // BILINGUAL (ENGLISH & FRANÇAIS)
         </div>
 
-        <h1 className="font-serif-editorial text-5xl sm:text-7xl lg:text-8xl font-bold text-black tracking-tight leading-[1.02]">
-          Visual Clarity for Complex Communications.
+        <h1 className="font-display text-6xl sm:text-8xl lg:text-9xl text-black tracking-wide leading-[0.92]">
+          VISUAL CLARITY FOR COMPLEX COMMUNICATIONS.
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pt-4">
-          <p className="md:col-span-8 text-lg sm:text-2xl text-neutral-800 font-light leading-relaxed">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pt-2">
+          <p className="md:col-span-9 font-sans text-lg sm:text-2xl text-neutral-800 font-normal leading-relaxed">
             Bilingual Graphic Design & Digital Marketing Coordinator based in Montreal. Specializing in high-stakes B2B collateral, brand identity, and legal sector marketing.
           </p>
         </div>
@@ -51,8 +51,8 @@ export default function Section1Hero() {
           <span className="text-black font-semibold block">Montreal, QC // FR & EN</span>
         </div>
         <div>
-          <span className="text-neutral-400 block mb-1">STATUS</span>
-          <span className="text-black font-semibold block">Available Immediately</span>
+          <span className="text-neutral-400 block mb-1">AVAILABILITY</span>
+          <span className="text-black font-semibold block">Full-Time Permanent</span>
         </div>
       </div>
     </section>
